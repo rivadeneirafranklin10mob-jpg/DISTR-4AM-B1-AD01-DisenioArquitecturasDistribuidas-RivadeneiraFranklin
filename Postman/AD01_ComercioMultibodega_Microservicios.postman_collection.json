@@ -1,0 +1,354 @@
+{
+  "info": {
+    "_postman_id": "a8f5e2c1-44d3-4b9a-9c7e-123456789abc",
+    "name": "AD01 - Microservicios Comercio Multibodega (Rivadeneira Franklin)",
+    "description": "Colección de pruebas Postman para los 3 microservicios independientes (Catalogo.Api, Inventario.Api, Pedidos.Api) con validaciones de llaves FK físicas, FK lógicas y respuestas HTTP 200, 201, 400 y 404.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "catalogoUrl",
+      "value": "http://localhost:5101",
+      "type": "string"
+    },
+    {
+      "key": "inventarioUrl",
+      "value": "http://localhost:5102",
+      "type": "string"
+    },
+    {
+      "key": "pedidosUrl",
+      "value": "http://localhost:5103",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "1. Catalogo.Api (CatalogoDB)",
+      "item": [
+        {
+          "name": "GET Categorias (200 OK)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{catalogoUrl}}/api/categorias",
+              "host": ["{{catalogoUrl}}"],
+              "path": ["api", "categorias"]
+            }
+          }
+        },
+        {
+          "name": "POST Crear Categoria (201 Created)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Almacenamiento SSD y NVMe\",\n  \"descripcion\": \"Unidades de estado sólido de alto rendimiento\"\n}"
+            },
+            "url": {
+              "raw": "{{catalogoUrl}}/api/categorias",
+              "host": ["{{catalogoUrl}}"],
+              "path": ["api", "categorias"]
+            }
+          }
+        },
+        {
+          "name": "GET Marcas (200 OK)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{catalogoUrl}}/api/marcas",
+              "host": ["{{catalogoUrl}}"],
+              "path": ["api", "marcas"]
+            }
+          }
+        },
+        {
+          "name": "POST Crear Marca (201 Created)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Kingston Technology\",\n  \"paisOrigen\": \"Estados Unidos\"\n}"
+            },
+            "url": {
+              "raw": "{{catalogoUrl}}/api/marcas",
+              "host": ["{{catalogoUrl}}"],
+              "path": ["api", "marcas"]
+            }
+          }
+        },
+        {
+          "name": "GET Productos (200 OK)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{catalogoUrl}}/api/productos",
+              "host": ["{{catalogoUrl}}"],
+              "path": ["api", "productos"]
+            }
+          }
+        },
+        {
+          "name": "GET Producto por ID Existente (200 OK)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{catalogoUrl}}/api/productos/1",
+              "host": ["{{catalogoUrl}}"],
+              "path": ["api", "productos", "1"]
+            }
+          }
+        },
+        {
+          "name": "GET Producto Inexistente (404 Not Found)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{catalogoUrl}}/api/productos/9999",
+              "host": ["{{catalogoUrl}}"],
+              "path": ["api", "productos", "9999"]
+            }
+          }
+        },
+        {
+          "name": "POST Crear Producto Válido (201 Created)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idCategoria\": 3,\n  \"idMarca\": 3,\n  \"nombre\": \"Teclado Mecánico Logitech MX Mechanical\",\n  \"sku\": \"LOG-MX-MECH-01\",\n  \"precio\": 169.99,\n  \"estado\": \"Activo\"\n}"
+            },
+            "url": {
+              "raw": "{{catalogoUrl}}/api/productos",
+              "host": ["{{catalogoUrl}}"],
+              "path": ["api", "productos"]
+            }
+          }
+        },
+        {
+          "name": "POST Producto con FK Física Inválida (400 Bad Request)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idCategoria\": 999,\n  \"idMarca\": 1,\n  \"nombre\": \"Producto con Categoría Inexistente\",\n  \"sku\": \"ERR-FK-999\",\n  \"precio\": 100.00,\n  \"estado\": \"Activo\"\n}"
+            },
+            "url": {
+              "raw": "{{catalogoUrl}}/api/productos",
+              "host": ["{{catalogoUrl}}"],
+              "path": ["api", "productos"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "2. Inventario.Api (InventarioDB)",
+      "item": [
+        {
+          "name": "GET Bodegas (200 OK)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{inventarioUrl}}/api/bodegas",
+              "host": ["{{inventarioUrl}}"],
+              "path": ["api", "bodegas"]
+            }
+          }
+        },
+        {
+          "name": "POST Crear Bodega (201 Created)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombre\": \"Bodega Logística Austro\",\n  \"ciudad\": \"Cuenca\",\n  \"direccion\": \"Parque Industrial Cuenca, Av. Octavio Chacón\"\n}"
+            },
+            "url": {
+              "raw": "{{inventarioUrl}}/api/bodegas",
+              "host": ["{{inventarioUrl}}"],
+              "path": ["api", "bodegas"]
+            }
+          }
+        },
+        {
+          "name": "GET Existencias (200 OK)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{inventarioUrl}}/api/existencias",
+              "host": ["{{inventarioUrl}}"],
+              "path": ["api", "existencias"]
+            }
+          }
+        },
+        {
+          "name": "POST Registrar Movimiento ENTRADA Válido (201 Created)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idProducto\": 1,\n  \"idBodega\": 1,\n  \"tipo\": \"ENTRADA\",\n  \"cantidad\": 10\n}"
+            },
+            "url": {
+              "raw": "{{inventarioUrl}}/api/movimientosinventario",
+              "host": ["{{inventarioUrl}}"],
+              "path": ["api", "movimientosinventario"]
+            }
+          }
+        },
+        {
+          "name": "POST Movimiento con FK Lógica Inválida en Catalogo.Api (400 Bad Request)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idProducto\": 8888,\n  \"idBodega\": 1,\n  \"tipo\": \"ENTRADA\",\n  \"cantidad\": 5\n}"
+            },
+            "url": {
+              "raw": "{{inventarioUrl}}/api/movimientosinventario",
+              "host": ["{{inventarioUrl}}"],
+              "path": ["api", "movimientosinventario"]
+            }
+          }
+        },
+        {
+          "name": "POST Crear Reserva de Stock Válida (201 Created)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idProducto\": 2,\n  \"idBodega\": 1,\n  \"cantidad\": 3,\n  \"estado\": \"Reservado\"\n}"
+            },
+            "url": {
+              "raw": "{{inventarioUrl}}/api/reservasstock",
+              "host": ["{{inventarioUrl}}"],
+              "path": ["api", "reservasstock"]
+            }
+          }
+        },
+        {
+          "name": "POST Reserva con Stock Insuficiente (400 Bad Request)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idProducto\": 1,\n  \"idBodega\": 1,\n  \"cantidad\": 5000,\n  \"estado\": \"Reservado\"\n}"
+            },
+            "url": {
+              "raw": "{{inventarioUrl}}/api/reservasstock",
+              "host": ["{{inventarioUrl}}"],
+              "path": ["api", "reservasstock"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "3. Pedidos.Api (PedidosDB)",
+      "item": [
+        {
+          "name": "GET Clientes (200 OK)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{pedidosUrl}}/api/clientes",
+              "host": ["{{pedidosUrl}}"],
+              "path": ["api", "clientes"]
+            }
+          }
+        },
+        {
+          "name": "POST Crear Cliente (201 Created)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombres\": \"Carlos Andrés Andrade\",\n  \"cedula\": \"1719283746\",\n  \"correo\": \"carlos.andrade@correo.com\"\n}"
+            },
+            "url": {
+              "raw": "{{pedidosUrl}}/api/clientes",
+              "host": ["{{pedidosUrl}}"],
+              "path": ["api", "clientes"]
+            }
+          }
+        },
+        {
+          "name": "GET Pedidos (200 OK)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{pedidosUrl}}/api/pedidos",
+              "host": ["{{pedidosUrl}}"],
+              "path": ["api", "pedidos"]
+            }
+          }
+        },
+        {
+          "name": "GET Pedido Inexistente (404 Not Found)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{pedidosUrl}}/api/pedidos/9999",
+              "host": ["{{pedidosUrl}}"],
+              "path": ["api", "pedidos", "9999"]
+            }
+          }
+        },
+        {
+          "name": "POST Crear Pedido con Detalles Validando FK Lógica y Stock (201 Created)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idCliente\": 1,\n  \"estado\": \"Confirmado\",\n  \"detalles\": [\n    {\n      \"idProducto\": 2,\n      \"cantidad\": 2,\n      \"precioUnitario\": 340.50\n    },\n    {\n      \"idProducto\": 3,\n      \"cantidad\": 1,\n      \"precioUnitario\": 99.99\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{pedidosUrl}}/api/pedidos",
+              "host": ["{{pedidosUrl}}"],
+              "path": ["api", "pedidos"]
+            }
+          }
+        },
+        {
+          "name": "POST Crear Pedido con Producto Inexistente - FK Lógica (400 Bad Request)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"idCliente\": 1,\n  \"estado\": \"Confirmado\",\n  \"detalles\": [\n    {\n      \"idProducto\": 7777,\n      \"cantidad\": 1,\n      \"precioUnitario\": 100.00\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{pedidosUrl}}/api/pedidos",
+              "host": ["{{pedidosUrl}}"],
+              "path": ["api", "pedidos"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

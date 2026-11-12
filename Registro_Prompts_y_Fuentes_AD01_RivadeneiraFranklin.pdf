@@ -1,0 +1,124 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R /F3 6 0 R >> >> /Contents 7 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Length 7942 >>
+stream
+BT 0.06 0.18 0.32 rg /F2 18 Tf 48 742 Td (Registro de fuentes y uso responsable de IA) Tj ET
+BT 0.28 0.34 0.42 rg /F2 10.5 Tf 48 724 Td (Adjunta este registro a tus tareas cuando utilices herramientas de IA.) Tj ET
+q 0.93 0.96 0.99 rg 48 696 516 20 re f Q
+q 0.17 0.42 0.69 rg 48 696 3.5 20 re f Q
+BT 0.06 0.18 0.32 rg /F2 9.5 Tf 58 702 Td (Actividad / C\363digo:) Tj ET
+BT 0.1 0.1 0.1 rg /F1 9.5 Tf 152 702 Td (AD01 - Dise\361o de Arquitecturas Distribuidas) Tj ET
+BT 0.06 0.18 0.32 rg /F2 9.5 Tf 373 702 Td (Estudiante:) Tj ET
+BT 0.1 0.1 0.1 rg /F1 9.5 Tf 430 702 Td (Rivadeneira Franklin \(4AM\)) Tj ET
+BT 0.12 0.31 0.55 rg /F2 12 Tf 48 676 Td (Declaraci\363n de uso:) Tj ET
+q 0.8 w 0.3 0.3 0.3 RG 50 659 8 8 re S Q
+BT 0.2 0.2 0.2 rg /F1 9 Tf 64 660 Td (No utilic\351 herramientas de IA generativa. Las referencias incluidas fueron consultadas directamente.) Tj ET
+q 0.17 0.42 0.69 rg 50 644 8 8 re f Q
+BT 1 1 1 rg /F2 7.5 Tf 51.5 645.5 Td (X) Tj ET
+BT 0.06 0.18 0.32 rg /F2 9 Tf 64 645 Td (Utilic\351 IA generativa como apoyo. Documentar\351 a continuaci\363n los prompts relevantes y verificar\351 las referencias.) Tj ET
+BT 0.3 0.35 0.4 rg /F3 8.8 Tf 48 630 Td (Registra una fila por consulta significativa \(puedes duplicar la tabla\).) Tj ET
+q 0.17 0.42 0.69 rg 48 608 516 18 re f Q
+BT 1 1 1 rg /F2 9.2 Tf 54 613 Td (Campo de Registro) Tj ET
+BT 1 1 1 rg /F2 9.2 Tf 209 613 Td (Detalle de la Consulta Documentada) Tj ET
+q 0.5 w 0.75 0.80 0.86 RG 48 588.8 155 19.2 re S Q
+q 0.5 w 0.75 0.80 0.86 RG 203 588.8 361 19.2 re S Q
+BT 0.10 0.22 0.36 rg /F2 8.8 Tf 54 596 Td (Herramienta / modelo:) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 596 Td (Google Gemini \(Asistente de programaci\363n e ingenier\355a de software en IDE\)) Tj ET
+q 0.96 0.98 1.0 rg 48 569.6 516 19.2 re f Q
+q 0.5 w 0.75 0.80 0.86 RG 48 569.6 155 19.2 re S Q
+q 0.5 w 0.75 0.80 0.86 RG 203 569.6 361 19.2 re S Q
+BT 0.10 0.22 0.36 rg /F2 8.8 Tf 54 576.8 Td (Fecha:) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 576.8 Td (11/11/2026) Tj ET
+q 0.5 w 0.75 0.80 0.86 RG 48 505.6 155 64 re S Q
+q 0.5 w 0.75 0.80 0.86 RG 203 505.6 361 64 re S Q
+BT 0.10 0.22 0.36 rg /F2 8.8 Tf 54 557.6 Td (Prop\363sito de la consulta:) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 557.6 Td (Dise\361ar y estructurar la arquitectura de 3 microservicios REST) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 546.4 Td (independientes \(Catalogo.Api, Inventario.Api y Pedidos.Api\) en) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 535.2 Td (ASP.NET Core Web API con SQL Server \(Database per Service\),) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 524 Td (definiendo llaves for\341neas f\355sicas en BD y llaves for\341neas l\363gicas) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 512.8 Td (validadas mediante HttpClient.) Tj ET
+q 0.96 0.98 1.0 rg 48 430.4 516 75.2 re f Q
+q 0.5 w 0.75 0.80 0.86 RG 48 430.4 155 75.2 re S Q
+q 0.5 w 0.75 0.80 0.86 RG 203 430.4 361 75.2 re S Q
+BT 0.10 0.22 0.36 rg /F2 8.8 Tf 54 493.6 Td (Prompt exacto:) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 493.6 Td ("Dise\361ar e implementar 3 microservicios REST independientes) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 482.4 Td (utilizando ASP.NET Core Web API y SQL Server \(CatalogoDB,) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 471.2 Td (InventarioDB y PedidosDB\), aplicando agrupaci\363n de entidades por) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 460 Td (dominio de negocio, reglas de llaves FK de referencia l\363gica y) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 448.8 Td (f\355sica, validaciones de entrada \(HTTP 200/201, 400 y 404\) y) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 437.6 Td (colecci\363n de pruebas en Postman.") Tj ET
+q 0.5 w 0.75 0.80 0.86 RG 48 366.4 155 64 re S Q
+q 0.5 w 0.75 0.80 0.86 RG 203 366.4 361 64 re S Q
+BT 0.10 0.22 0.36 rg /F2 8.8 Tf 54 418.4 Td (Respuesta aprovechada:) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 418.4 Td (Se aprovech\363 la estructura por capas \(Models con DataAnnotations,) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 407.2 Td (Data con DbContext independiente por microservicio y FKs f\355sicas) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 396 Td (en OnModelCreating, Services con IHttpClientFactory para validar) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 384.8 Td (la FK l\363gica de IdProducto y stock entre microservicios, y) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 373.6 Td (Controllers con respuestas HTTP estandarizadas\).) Tj ET
+q 0.96 0.98 1.0 rg 48 291.2 516 75.2 re f Q
+q 0.5 w 0.75 0.80 0.86 RG 48 291.2 155 75.2 re S Q
+q 0.5 w 0.75 0.80 0.86 RG 203 291.2 361 75.2 re S Q
+BT 0.10 0.22 0.36 rg /F2 8.8 Tf 54 354.4 Td (Fuentes informales y) Tj ET
+BT 0.10 0.22 0.36 rg /F2 8.8 Tf 54 343.2 Td (sugeridas por IA) Tj ET
+BT 0.10 0.22 0.36 rg /F2 8.8 Tf 54 332 Td (\(al menos 3\):) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 354.4 Td (1. Microsoft Learn - Tutorial: Creaci\363n de una API web con ASP.NET Core) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 343.2 Td (   https://learn.microsoft.com/es-es/aspnet/core/tutorials/first-web-api) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 332 Td (2. Microsoft Learn - Gu\355a de arquitectura de microservicios .NET) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 320.8 Td (   https://learn.microsoft.com/es-es/dotnet/architecture/microservices/) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 309.6 Td (3. Microsoft Learn - Solicitudes HTTP con IHttpClientFactory en ASP.NET Core) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 298.4 Td (   https://learn.microsoft.com/es-es/aspnet/core/fundamentals/http-requests) Tj ET
+q 0.5 w 0.75 0.80 0.86 RG 48 227.2 155 64 re S Q
+q 0.5 w 0.75 0.80 0.86 RG 203 227.2 361 64 re S Q
+BT 0.10 0.22 0.36 rg /F2 8.8 Tf 54 279.2 Td (Fuentes verificadas y) Tj ET
+BT 0.10 0.22 0.36 rg /F2 8.8 Tf 54 268 Td (citadas \(al menos 3\):) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 279.2 Td (1. Microsoft Corporation \(2024\) - Creaci\363n de una API web con controladores) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 268 Td (   de ASP.NET Core \(verificada en learn.microsoft.com\).) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 256.8 Td (2. De la Torre, C., Wagner, B., & Rousos, M. \(2024\) - .NET Microservices:) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 245.6 Td (   Architecture for Containerized .NET Applications \(Database per Service\).) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.4 Tf 209 234.4 Td (3. Microsoft Corporation \(2024\) - Introducci\363n a las relaciones en EF Core.) Tj ET
+BT 0.12 0.31 0.55 rg /F2 11.5 Tf 48 209.2 Td (Bibliograf\355a / referencias verificadas) Tj ET
+BT 0.3 0.35 0.4 rg /F3 8.2 Tf 48 197.2 Td (Incluye las citas y referencias reales que utilizaste. Se comprobaron las fuentes originales en Microsoft Learn.) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.2 Tf 52 184.2 Td (1. Microsoft Corporation. \(2024\). Creaci\363n de una API web con controladores de ASP.NET Core. Microsoft Learn.) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.2 Tf 52 173.7 Td (   https://learn.microsoft.com/es-es/aspnet/core/web-api/) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.2 Tf 52 163.2 Td (2. De la Torre, C., Wagner, B., & Rousos, M. \(2024\). .NET Microservices: Architecture for Containerized .NET Applications) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.2 Tf 52 152.7 Td (   https://learn.microsoft.com/es-es/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/ddd-oriented-microservice) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.2 Tf 52 142.2 Td (3. Microsoft Corporation. \(2024\). Introducci\363n a las relaciones en Entity Framework Core. Microsoft Learn.) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.2 Tf 52 131.7 Td (   https://learn.microsoft.com/es-es/ef/core/modeling/relationships) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.2 Tf 52 121.2 Td (4. Microsoft Corporation. \(2024\). Realizaci\363n de solicitudes HTTP mediante IHttpClientFactory en ASP.NET Core.) Tj ET
+BT 0.12 0.12 0.12 rg /F1 8.2 Tf 52 110.7 Td (   https://learn.microsoft.com/es-es/aspnet/core/fundamentals/http-requests) Tj ET
+
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000261 00000 n 
+0000000358 00000 n 
+0000000460 00000 n 
+0000000565 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+8559
+%%EOF
